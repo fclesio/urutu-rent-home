@@ -21,3 +21,7 @@ The output will be two files (an excel file and a csv):
     `immo24_urutu.xlsx`
     `immo24_urutu.csv`
 
+Why Urutu?
+------------------------------
+Because I just wanted to honor a typical Brazilian animal species. It has no special meaning. BTW [Urutu](https://en.wikipedia.org/wiki/Bothrops_alternatus) it's a very dangerous snake. If you see any, run away.
+
