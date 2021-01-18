@@ -52,6 +52,11 @@ user [plamenpasliev](https://github.com/plamenpasliev) for the nice
 implementation using folium. The work can be found [here](https://github.com/plamenpasliev/BerlinHousing).
 
 
-
+Roadmap
+------------------------------
+- [ ] Average price per region
+- [ ] Index condensing Area / Price per Square Meter in a following region
+- [ ] Price Alerts in Slack
+- [ ] Database with historical information
 
 
