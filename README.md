@@ -23,7 +23,12 @@ A interactive map it's generated also. The file it's named as:
 	
 This file can be open in any browser. 
 
-Check the example here: [https://fclesio.github.io/urutu/berlin_housing_map.html](https://fclesio.github.io/urutu/berlin_housing_map.html) 
+### Check the example here: [https://fclesio.github.io/urutu/berlin_housing_map.html](https://fclesio.github.io/urutu/berlin_housing_map.html) 
+
+Legend:
+	- Red: 1 Room
+	- Green: 2 Room
+	- Blue: 3+ Room
 
 
 Why Urutu?
