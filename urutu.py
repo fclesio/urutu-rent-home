@@ -255,7 +255,7 @@ def generate_map(df_listings_filtered):
             color=color,
             fill=True).add_to(folium_map)
 
-    now = datetime.now().strftime("%H:%M:%S")
+    now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     legend = f'Urutu Find a Home. Last update: {now}'
 
     title_html = '''
