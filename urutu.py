@@ -191,10 +191,6 @@ def get_df_with_columns(listing_results):
     return df_listings
 
 
-def sort_df_listings(df_listings):
-    return df_listings.sort_values(by=["price"], ascending=True)
-
-
 def save_df_to_disk(df_listings, extraction_date):
     df_listings.to_excel(f"immo24_listings_{extraction_date}.xlsx", index=False)
     df_listings.to_csv(f"immo24_listings_{extraction_date}.csv", index=False)
@@ -259,7 +255,14 @@ def generate_map(df_listings_filtered):
             color=color,
             fill=True).add_to(folium_map)
 
-    folium_map.save("berlin_housing_map.html")
+    loc = 'Corpus Christi'
+    title_html = '''
+                 <h3 align="center" style="font-size:16px"><b>{}</b></h3>
+                 '''.format(loc)
+
+    folium_map.get_root().html.add_child(folium.Element(title_html))
+
+    folium_map.save("index.html")
 
 
 def main():
@@ -271,7 +274,7 @@ def main():
     sys.stdout.write(str("Processing listings results...") + '\n')
     listing_results = get_listings_detailed_info(searchresults)
     df_listings_with_columns = get_df_with_columns(listing_results)
-    df_listings = sort_df_listings(df_listings_with_columns)
+    df_listings = df_listings_with_columns
 
     sys.stdout.write(str("Save results in csv...") + '\n')
     save_df_to_disk(df_listings, extraction_date)
