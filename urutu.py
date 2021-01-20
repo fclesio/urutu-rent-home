@@ -255,10 +255,12 @@ def generate_map(df_listings_filtered):
             color=color,
             fill=True).add_to(folium_map)
 
-    loc = 'Corpus Christi'
+    now = datetime.now().strftime("%H:%M:%S")
+    legend = f'Urutu Find a Home. Last update: {now}'
+
     title_html = '''
                  <h3 align="center" style="font-size:16px"><b>{}</b></h3>
-                 '''.format(loc)
+                 '''.format(legend)
 
     folium_map.get_root().html.add_child(folium.Element(title_html))
 
