@@ -23,7 +23,7 @@ A interactive map it's generated also. The file it's named as:
 	
 This file can be open in any browser. 
 
-### [Check the Map here!!!](https://fclesio.github.io/urutu/berlin_housing_map.html)
+### [Check the Map here!!!](https://urutu.netlify.app/)
 
 Legend:  
 	- Red: 1 Room  
