@@ -226,7 +226,7 @@ def generate_map(df_listings_filtered):
         <b>Quarter</b>: {quarter} <br>
         <b>NumberOfRooms</b>: {numberOfRooms} <br>
         <b>Balcony</b>: {balcony} <br>
-        <b>Garden</b>: {garden} <br>
+        <b>Garden</b>: {garden} 
         <b>MonthlyRate</b>: {monthlyRate} <br>
         <b>BuiltInKitchen</b>: {builtInKitchen} <br>
         <b>home_url</b>: <a href="{home_url}">{home_url}</a> <br>
